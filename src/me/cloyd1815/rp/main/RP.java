@@ -1,9 +1,12 @@
 package me.cloyd1815.rp.main;
 
+import me.cloyd1815.rp.VoidGenerator;
+
+import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Main extends JavaPlugin {
+public class RP extends JavaPlugin {
 	private Plugin plugin;
 	@Override
 	public void onEnable() {
@@ -22,4 +25,9 @@ public class Main extends JavaPlugin {
 	public void setPlugin(Plugin plugin) {
 		this.plugin = plugin;
 	}
+	
+	@Override
+    public ChunkGenerator getDefaultWorldGenerator(String worldName, String id) {
+        return new VoidGenerator();
+    }
 }
