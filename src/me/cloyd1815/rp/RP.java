@@ -1,6 +1,4 @@
-package me.cloyd1815.rp.main;
-
-import me.cloyd1815.rp.VoidGenerator;
+package me.cloyd1815.rp;
 
 import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.plugin.Plugin;
