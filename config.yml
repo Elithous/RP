@@ -1,0 +1,7 @@
+# In order to make the Void World generation work you must add
+#
+# worlds:
+#   <WorldName>:
+#     generator: RP
+#
+# to your server's bukkit.yml
